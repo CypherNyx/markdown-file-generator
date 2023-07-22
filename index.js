@@ -4,14 +4,12 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 //*** Create an array of questions for user input:
-
 // * What is the title of your project? 
 // ToDo: Create sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 // * enter a:  * project title
 // THEN this is displayed as the title of the README
 // * enter a:  * description, 
-            // * installation 
-            // * instructions,
+            // * installation instructions 
             // * usage information, 
             // * contribution guidelines, 
             // * and test instructions
@@ -26,42 +24,32 @@ const generateMarkdown = require('./utils/generateMarkdown');
 //* I click on the links in the Table of Contents
 //THEN I am taken to the corresponding section of the README
 
-
-
 const questions = [
   {
-    type: input,
+    type: 'input',
     message: 'What is your GitHub Username?',
     name: 'username',
     validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid GitHub username.'): true,
-
   },{
     type: 'input',
     message: 'What is your e-mail address?',
     name: 'email',
     validate: (answer) => answer.lenght <1 ? console.log('Please enter an email address.'): true,
-    
   },{
     type: 'input',
     message: 'What is the name of your GitHub repository?',
     name: 'repo',
     validate: (answer) => answer.lenght <1 ? console.log('A valid GitHub repository name is required for a badge'): true,
-
-
   },{
     type: 'input',
     message: 'What is the title of your project?',
     name: 'title',
     validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid project title.'): true,
-
-
   },{
     type: 'input',
     message: 'Write a description of your project',
     name: 'description',
     validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid project description.'): true,
-
-
   },{
     type:'input' ,
     message: 'Installation: What are the installation instructions of you project?',
@@ -86,11 +74,29 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Create a function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, generateMarkdown(data), error => {
+    if(error) {
+      return console.log(error);
+    } else{
+      console.log('README creation was successful')
+    }
+  });
+};
 
-// TODO: Create a function to initialize app
-function init() {}
+// Create a function to initialize app
+function init() {
+  inquirer.prompt(questions)
+  .then(function(answers){
+    const fileName =
+        answers.title
+        .split('')
+        .join('') + '.md'
+
+      writeToFile(fileName, answers);
+  });
+};
 
 // Function call to initialize app
 init();
