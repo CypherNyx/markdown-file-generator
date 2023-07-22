@@ -20,15 +20,15 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if(license.length === 0){
     return ''
+  } else if (license == 'Apache'){
+    return 'https://opensource.org/licenses/Apache-2.0'
+  } else if(license == 'GNU'){
+    return 'https://www.gnu.org/licenses/gpl-3.0'
   } else if (license == 'MIT'){
     return 'https://opensource.org/licenses/MIT'
   } else if (license == 'Mozilla'){
     return 'https://opensource.org/licenses/MPL-2.0'
-  } else if(license == 'GNU'){
-    return 'https://www.gnu.org/licenses/gpl-3.0'
-  } else if (license == 'Apache'){
-    return 'https://opensource.org/licenses/Apache-2.0'
-  }
+  } 
 };
 
 // Create a function that returns the license section of README
