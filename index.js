@@ -16,7 +16,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // ToDo: Add this information to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
 //* Create a question that uses a LIST type so that user can choose a license from a list of options
-// !: HOW???  a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under.
+//* A badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under.
 //* enter my GitHub username 
 //THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
 //* enter my email address 
