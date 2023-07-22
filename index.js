@@ -1,4 +1,4 @@
-// *** Include packages needed for this application
+// *** Include packages needed for this application  ee
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
