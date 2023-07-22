@@ -27,16 +27,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
   {
     type: 'input',
-    message: 'What is your GitHub Username?',
-    name: 'username',
-    validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid GitHub username.'): true,
-  },{
-    type: 'input',
-    message: 'What is your e-mail address?',
-    name: 'email',
-    validate: (answer) => answer.lenght <1 ? console.log('Please enter an email address.'): true,
-  },{
-    type: 'input',
     message: 'What is the name of your GitHub repository?',
     name: 'repo',
     validate: (answer) => answer.lenght <1 ? console.log('A valid GitHub repository name is required for a badge'): true,
@@ -71,6 +61,16 @@ const questions = [
     message: 'License - Choose a license for yout project.',
     choices: ['MIT', 'Mozilla', 'GNU', 'Apache'],
     name: 'license',
+  },{
+    type: 'input',
+    message: 'What is your GitHub Username?',
+    name: 'username',
+    validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid GitHub username.'): true,
+  },{
+    type: 'input',
+    message: 'What is your e-mail address?',
+    name: 'email',
+    validate: (answer) => answer.lenght <1 ? console.log('Please enter an email address.'): true,
   },
 ];
 
