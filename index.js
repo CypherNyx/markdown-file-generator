@@ -16,7 +16,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // ToDo: Add this information to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
 //* Create a question that uses a LIST type so that user can choose a license from a list of options
-// !: HOW???  a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under.
+//* A badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under.
 //* enter my GitHub username 
 //THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
 //* enter my email address 
@@ -47,28 +47,28 @@ const questions = [
     validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid project title.'): true,
   },{
     type: 'input',
-    message: 'Write a description of your project',
+    message: 'Write a description of your project:',
     name: 'description',
     validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid project description.'): true,
   },{
     type:'input' ,
-    message: 'Installation: What are the installation instructions of you project?',
+    message: 'Installation - What are the installation instructions of you project?',
     name: 'install',
   },{
     type: 'input',
-    message: 'Usage: Do you have any example usages or aditional usage instructions for your project?',
+    message: 'Usage - Do you have any example usages or aditional usage instructions for your project?',
     name: 'usage',
   },{
     type: 'input',
-    message: 'Contributing: If you want other developers to contribute, provide some guidelines here:',
+    message: 'Contributing - If you want other developers to contribute, provide clear guidelines:',
     name: 'contributing' ,
   },{
     type: 'input',
-    message:'Tests: Provide any tests written for your application:' ,
+    message:'Tests - Provide any tests written for your application:' ,
     name: 'test',
   },{
     type: 'list',
-    message: 'License: Choose a license for yout project.',
+    message: 'License - Choose a license for yout project.',
     choices: ['MIT', 'Mozilla', 'GNU', 'Apache'],
     name: 'license',
   },
