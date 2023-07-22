@@ -69,7 +69,7 @@ const questions = [
   },{
     type: 'list',
     message: 'License: Choose a license for yout project.',
-    choices: ['MIT', 'Mozilla', 'GNU', 'BSD'],
+    choices: ['MIT', 'Mozilla', 'GNU', 'Apache'],
     name: 'license',
   },
 ];
