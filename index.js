@@ -30,20 +30,58 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = [
   {
-    type: ,
-    message: ,
-    name: ,
+    type: input,
+    message: 'What is your GitHub Username?',
+    name: 'username',
+    validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid GitHub username.'): true,
 
+  },{
+    type: 'input',
+    message: 'What is your e-mail address?',
+    name: 'email',
+    validate: (answer) => answer.lenght <1 ? console.log('Please enter an email address.'): true,
+    
+  },{
+    type: 'input',
+    message: 'What is the name of your GitHub repository?',
+    name: 'repo',
+    validate: (answer) => answer.lenght <1 ? console.log('A valid GitHub repository name is required for a badge'): true,
+
+
+  },{
+    type: 'input',
+    message: 'What is the title of your project?',
+    name: 'title',
+    validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid project title.'): true,
+
+
+  },{
+    type: 'input',
+    message: 'Write a description of your project',
+    name: 'description',
+    validate: (answer) => answer.lenght <1 ? console.log('Please enter a valid project description.'): true,
+
+
+  },{
+    type:'input' ,
+    message: 'Installation: What are the installation instructions of you project?',
+    name: 'install',
   },{
     type: ,
     message: ,
     name: ,
-
   },{
     type: ,
     message: ,
     name: ,
-
+  },{
+    type: ,
+    message: ,
+    name: ,
+  },{
+    type: ,
+    message: ,
+    name: ,
   },
 ];
 
