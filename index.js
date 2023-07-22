@@ -67,21 +67,22 @@ const questions = [
     message: 'Installation: What are the installation instructions of you project?',
     name: 'install',
   },{
-    type: ,
-    message: ,
-    name: ,
+    type: 'input',
+    message: 'Usage: Do you have any example usages or aditional usage instructions for your project?',
+    name: 'usage',
   },{
-    type: ,
-    message: ,
-    name: ,
+    type: 'input',
+    message: 'Contributing: If you want other developers to contribute, provide some guidelines here:',
+    name: 'contributing' ,
   },{
-    type: ,
-    message: ,
-    name: ,
+    type: 'input',
+    message:'Tests: Provide any tests written for your application:' ,
+    name: 'test',
   },{
-    type: ,
-    message: ,
-    name: ,
+    type: 'list',
+    message: 'License: Choose a license for yout project.',
+    choices: ['MIT', 'Mozilla', 'GNU', 'BSD'],
+    name: 'license',
   },
 ];
 
