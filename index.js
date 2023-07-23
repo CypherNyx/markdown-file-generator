@@ -88,10 +88,12 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions)
   .then(function(answers){
-    const fileName =
-        answers.title
-        .split('')
-        .join('') + '.md'
+    // const fileName =
+    //     answers.title
+    //     .split('')
+    //     .join('') + '.md'
+
+    const fileName ='README-inq.md'
 
       writeToFile(fileName, answers);
   });
