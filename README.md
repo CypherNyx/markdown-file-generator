@@ -7,6 +7,7 @@ This application utilizes Node.js and the [inquirer NPM](https://www.npmjs.com/p
 
 ## Table of Contents
   * [Demo](#demo)
+  * [ScreenCaptures](#screenCaptures)
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
@@ -17,10 +18,11 @@ This application utilizes Node.js and the [inquirer NPM](https://www.npmjs.com/p
 ## Demo
 Here is a link to the video of the Application Demo:<br>
 [Node.js README Generator -DEMO ➡️](https://drive.google.com/file/d/1tqJYuQiPVJGjxH1enmB_k1xCpiy5Sx-u/view)
+[Sample README.md - Generated in Demo ➡️](https://github.com/CypherNyx/markdown-file-generator/blob/main/assets/README-inq.md)
 
 ## ScreenCaptures
 ![Prompt Guide](./assets/Screencapture_Prompts.png) <br><br>
-![screenshot sample](./assets/Screencapture_sample_README.png)
+![screenshot sample](./assets/Screencapture_sample_README_gen.png)
 
 ## Installation
 To use the README Generator, you'll need to have Node.js installed on your computer. Once you have Node.js set up, you can follow these steps to install and use the application:
