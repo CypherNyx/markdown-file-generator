@@ -16,9 +16,9 @@ This application utilizes Node.js and the [inquirer NPM](https://www.npmjs.com/p
 <br><br>
 
 ## Demo
-Here is a link to the video of the Application Demo:<br>
-[Node.js README Generator -DEMO ➡️](https://drive.google.com/file/d/1tqJYuQiPVJGjxH1enmB_k1xCpiy5Sx-u/view)
-[Sample README.md - Generated in Demo ➡️](https://github.com/CypherNyx/markdown-file-generator/blob/main/assets/README-inq.md)
+Here is a link to the video of the Application Demo:<br><br>
+[Node.js README Generator -DEMO ➡️](https://drive.google.com/file/d/1tqJYuQiPVJGjxH1enmB_k1xCpiy5Sx-u/view) <br><br>
+[Sample README.md - File Generated in Demo ➡️](https://github.com/CypherNyx/markdown-file-generator/blob/main/assets/README-inq.md)
 
 ## ScreenCaptures
 ![Prompt Guide](./assets/Screencapture_Prompts.png) <br><br>
