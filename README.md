@@ -13,12 +13,14 @@ This application utilizes Node.js and the [inquirer NPM](https://www.npmjs.com/p
   * [License](#license)
   * [Questions](#questions)
 <br><br>
-## 
-![screenshot sample](./assets/Screencapture_sample_README.png)
 
 ## Demo
 Here is a link to the video of the Application Demo:<br>
-[Node.js README Generator -DEMO ➡️](url)
+[Node.js README Generator -DEMO ➡️](https://drive.google.com/file/d/1tqJYuQiPVJGjxH1enmB_k1xCpiy5Sx-u/view)
+
+## ScreenCaptures
+![Prompt Guide](./assets/Screencapture_Prompts.png) <br><br>
+![screenshot sample](./assets/Screencapture_sample_README.png)
 
 ## Installation
 To use the README Generator, you'll need to have Node.js installed on your computer. Once you have Node.js set up, you can follow these steps to install and use the application:
